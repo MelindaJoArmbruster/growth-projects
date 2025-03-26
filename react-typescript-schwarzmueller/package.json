@@ -1,0 +1,17 @@
+{
+  "name": "react-typescript-schwarzmueller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --userconfig=/dev/null",
+    "tsc": "tsc",
+    "tsc-compile": "./node_modules/.bin/tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
