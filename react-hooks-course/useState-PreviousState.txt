@@ -1,0 +1,18 @@
+import React, { useState } from 'react';
+
+function App() {
+    const [step, setStep] = useState(0);
+
+    const increment = () => setStep((prevStep) => prevStep + 1);
+    const decrement = () => setStep((prevStep) => prevStep - 1);
+
+    return (
+        <div>
+            <h2>Step: {step}</h2>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
+        </div>
+    );
+}
+
+export default App;

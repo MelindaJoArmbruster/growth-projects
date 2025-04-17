@@ -1,0 +1,18 @@
+import React, { useState } from 'react';
+
+function App() {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const toggleTheme = () => {
+        setIsDarkMode(prevMode => !prevMode);
+    };
+
+    return (
+        <div style={{ backgroundColor: isDarkMode ? 'black' : 'white', color: isDarkMode ? 'white' : 'black' }}>
+            <h2>{isDarkMode ? 'Dark Mode' : 'Light Mode'}</h2>
+            <button onClick={toggleTheme}>Toggle Theme</button>
+        </div>
+    );
+}
+
+export default App;

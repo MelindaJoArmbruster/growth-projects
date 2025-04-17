@@ -1,0 +1,18 @@
+import React, { useState } from 'react';
+
+function App() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => setIsVisible((prev) => !prev);
+
+    return (
+        <div>
+            <button onClick={toggleVisibility}>
+                {isVisible ? 'Hide' : 'Show'} Text
+            </button>
+            {isVisible && <p>This is the text that can be shown or hidden.</p>}
+        </div>
+    );
+}
+
+export default App;
